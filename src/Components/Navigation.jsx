@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Contacts', href: '#', current: false },
+  { name: 'Services', href: '#sevices', current: false },
+  { name: 'Projects', href: '#projects', current: false },
+  { name: 'Contacts', href: '#contact', current: false },
 ];
 
 const Navigation = () => {
@@ -15,7 +15,7 @@ const Navigation = () => {
 
   return (
     <header className='absolute inset-x-0 top-0 z-50'>
-      <nav aria-label='Global' className='flex items-center justify-between p-6 lg:px-8'>
+      <nav aria-label='Global' className='flex items-center justify-between p-6 lg:px-24'>
         <div className='flex lg:flex-1'>
           <a href='#' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Your Company</span>
@@ -34,14 +34,32 @@ const Navigation = () => {
         </div>
         <div className='hidden lg:flex lg:flex-grow lg:gap-x-12'>
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className='relative text-sm/6 font-semibold text-gray-900 
+            <a
+              key={item.name}
+              href={item.href}
+              className='relative text-sm/6 font-semibold text-gray-900 
                 after:absolute after:left-0 after:-bottom-2 after:h-[4px] after:w-0 
-                after:bg-indigo-600 after:transition-all after:duration-300 
-                hover:after:w-full hover:after:bg-blue-500 after:rounded-sm'>
+                after:bg-violet-500 after:transition-all after:duration-300 
+                hover:after:w-full hover:after:bg-violet-500 after:rounded-sm'
+            >
               {item.name}
             </a>
           ))}
         </div>
+        <div className='hidden lg:flex lg:justify-end gap-2'>
+          <a
+            href='https://www.facebook.com/p/Si%C3%B3-Creative-IT-61558465540883/'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Visit our Facebook page'
+          >
+            <i className='ri-facebook-fill'></i>
+          </a>
+          <i className='ri-instagram-line'></i>
+          <p>en</p>
+          <p>hu</p>
+        </div>
+        <div className='flex items-end gap-5 text-lg'></div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className='lg:hidden'>
         <div className='fixed inset-0 z-50' />
@@ -72,6 +90,24 @@ const Navigation = () => {
                     {item.name}
                   </a>
                 ))}
+              </div>
+              <div className='py-6 flex gap-4 justify-start'>
+                <a
+                  href='https://www.facebook.com/p/Si%C3%B3-Creative-IT-61558465540883/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Visit our Facebook page'
+                >
+                  <i className='ri-facebook-fill text-2xl'></i>
+                </a>
+                <a
+                  href='https://www.instagram.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Visit our Instagram page'
+                >
+                  <i className='ri-instagram-line text-2xl'></i>
+                </a>
               </div>
             </div>
           </div>
