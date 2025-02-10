@@ -55,9 +55,9 @@ const Navigation = () => {
             rel='noopener noreferrer'
             aria-label='Visit our Facebook page'
           >
-            <FaFacebook className='text-violet-600'/>
+            <FaFacebook />
           </a>
-          <FaInstagram className='text-violet-600'/>
+          <FaInstagram />
           {/* <p>en</p>
           <p>hu</p> */}
         </div>

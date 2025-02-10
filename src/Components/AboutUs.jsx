@@ -19,7 +19,7 @@ const AboutUs = () => {
           <div className='mt-10 md:w-5/12 lg:w-5/12 flex justify-center w-full overflow-hidden rounded-xl'>
             <img src={company} alt='about_us' className='object-contain' />
           </div>
-          <div className='md:w-7/12 lg:w-6/12 overflow-hidden rounded-xl shadow-xl shadow-blue-900/20 lg:mt-0 p-8'>
+          <div className='font-display md:w-7/12 lg:w-6/12 overflow-hidden rounded-xl shadow-xl shadow-blue-900/20 lg:mt-0 p-8'>
             <p className='max-w-2xl mx-auto mb-6 text-center text-white md:text-left'>
               A SioCreativeIT az egyedi webes megoldások szakértője. Tapasztalatunkkal és szakértelmünkkel segítjük
               vállalkozását online növekedni.
