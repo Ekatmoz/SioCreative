@@ -1,6 +1,8 @@
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from '../assets/logo.png';
+import { FaFacebook } from "react-icons/fa"
+import { FaInstagram } from 'react-icons/fa';
 import { useState } from 'react';
 
 const navigation = [
@@ -12,9 +14,9 @@ const navigation = [
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+//absolute was in the header
   return (
-    <header className='absolute inset-x-0 top-0 z-50'>
+    <header className='absolute inset-x-0 top-0 z-50'> 
       <nav aria-label='Global' className='flex items-center justify-between p-6 lg:px-24'>
         <div className='flex lg:flex-1'>
           <a href='#' className='-m-1.5 p-1.5'>
@@ -46,20 +48,19 @@ const Navigation = () => {
             </a>
           ))}
         </div>
-        <div className='hidden lg:flex lg:justify-end gap-2'>
+        <div className='m-8 hidden lg:flex gap-2'>
           <a
             href='https://www.facebook.com/p/Si%C3%B3-Creative-IT-61558465540883/'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Visit our Facebook page'
           >
-            <i className='ri-facebook-fill'></i>
+            <FaFacebook className='text-violet-600'/>
           </a>
-          <i className='ri-instagram-line'></i>
-          <p>en</p>
-          <p>hu</p>
+          <FaInstagram className='text-violet-600'/>
+          {/* <p>en</p>
+          <p>hu</p> */}
         </div>
-        <div className='flex items-end gap-5 text-lg'></div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className='lg:hidden'>
         <div className='fixed inset-0 z-50' />

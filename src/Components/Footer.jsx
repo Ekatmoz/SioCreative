@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-700 text-white text-center py-4">
 
-      <p>© 2024 SioCreativeIT. Minden jog fenntartva.</p>
+      <p>Copyright©2024 SioCreativeIT. All rights reserved.</p>
     </footer>
   );
 };
