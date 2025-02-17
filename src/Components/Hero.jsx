@@ -1,9 +1,18 @@
 import hero from './../assets/hero.png';
-// border-neutral-900
-//text-blue-600
+import { motion } from 'framer-motion';
+
+const container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
+  },
+});
+
 const Hero = () => {
   return (
-    <div className='relative isolate px-6 pt-20 sm:pt-24 lg:pt-32 lg:px-8'>
+    <div className='relative isolate mx-6 sm:mx-8 md:mx-12 lg:mx-20 px-6 pt-20 sm:pt-24 lg:pt-32 lg:px-8'>
       <div className=' pb-4 lg:mb-35'>
         <div
           aria-hidden='true'
@@ -21,7 +30,12 @@ const Hero = () => {
         <div className='flex flex-wrap'>
           <div className='w-full lg:w-1/2'>
             <div className='flex flex-col items-center lg:items-start'>
-              <h1 className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-slate-900'>
+              <motion.h1
+                variants={container(0)}
+                initial='hidden'
+                animate='visible'
+                className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-slate-900'
+              >
                 WEBOLDALAKAT{' '}
                 <span className='relative whitespace-nowrap'>
                   <svg
@@ -34,13 +48,23 @@ const Hero = () => {
                   </svg>
                   <span className='relative text-slate-900'>KÉSZÍTÜNK</span>
                 </span>
-              </h1>
-              <span className=' bg-gradient-to-r from-purple-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
+              </motion.h1>
+              <motion.span
+                variants={container(0.5)}
+                initial='hidden'
+                animate='visible'
+                className=' bg-gradient-to-r from-purple-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'
+              >
                 Emelje vállalatát a következő szintre!
-              </span>
-              <p className='my-2 max-w-xl py-6 text-slate-700'>
+              </motion.span>
+              <motion.p
+                variants={container(1)}
+                initial='hidden'
+                animate='visible'
+                className='my-2 max-w-xl py-6 text-slate-700'
+              >
                 Felhasználóközpontú, üzleti célú weboldalakat tervezünk, amelyek kiemelik márkáját és növelik bevételeit
-              </p>
+              </motion.p>
               <div className='mt-10 flex justify-center gap-x-6'>
                 <a
                   className='inline-flex py-2 px-8 items-center justify-center rounded-full text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900'
