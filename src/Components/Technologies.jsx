@@ -7,7 +7,7 @@ import { RiTailwindCssLine } from "react-icons/ri";
 const Technologies = () => {
   return (
     <div className="py-16 px-8">
-      <h1 className="my-20 text-center text-4xl font-semibold">Technologies</h1>
+      <h1 className="my-20 text-center text-4xl font-semibold">Technológiák</h1>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <div className="rounded-2xl border-2 border-neutral-200 p-4">
           <RiReactjsLine className="text-7xl text-cyan-400" />

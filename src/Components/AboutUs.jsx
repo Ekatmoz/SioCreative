@@ -13,7 +13,7 @@ const AboutUs = () => {
       />
       <div className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <h2 className='text-4xl font-semibold mb-6 text-center text-white'>
-          Everything you need to know about us/Rólunk
+          Minden, amit rólunk tudni kell
         </h2>
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-12'>
           <div className='mt-10 md:w-5/12 lg:w-5/12 flex justify-center w-full overflow-hidden rounded-xl'>

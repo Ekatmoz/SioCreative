@@ -2,12 +2,11 @@ import './App.css';
 import Navigation from './Components/Navigation';
 import AboutUs from './Components/AboutUs';
 import Services from './Components/Services';
-import Portfolio from './Components/Portfolio';
 import Testimonials from './Components/Testomonials';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Technologies from './Components/Technologies';
-import New from './Components/New';
+import New from './Components/Portfolio';
 import Hero from './Components/Hero';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <Technologies />
       <Services />
       <New />
-      {/* <Portfolio /> */}
       <Testimonials />
       <Contact />
       <Footer />
