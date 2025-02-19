@@ -63,7 +63,7 @@ const Portfolio = () => {
               layout='fill'
               className='absolute inset-0 h-full w-full object-cover'
               sizes='(min-width: 640px) 18rem, 11rem'
-              priority
+              priority="true"
             />
           </div>
         ))}
