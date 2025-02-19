@@ -10,6 +10,11 @@ const container = (delay) => ({
   },
 });
 
+const image = (delay) => ({
+  hidden: { x: 200, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
+});
+
 const Hero = () => {
   return (
     <div className='relative isolate mx-6 sm:mx-8 md:mx-12 lg:mx-20 px-6 pt-20 sm:pt-24 lg:pt-32 lg:px-8'>
@@ -89,9 +94,9 @@ const Hero = () => {
             </div>
           </div>
           <div className='w-full lg:w-1/2 lg:p-8'>
-            <div className='flex justify-center'>
+            <motion.div variants={image(1.2)} initial='hidden' animate='visible' className='flex justify-center'>
               <img src={hero} alt='Company' />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
