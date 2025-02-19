@@ -64,9 +64,9 @@ const Navigation = () => {
       </nav>
       
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className='lg:hidden'>
-        <div className='fixed inset-0 z-50' />
+        <div className='fixed inset-0 z-50 bg-slate-300/50 transition-opacity' />
         
-        <DialogPanel className='fixed inset-y-0 right-0 z-50 w-11/12 max-w-sm rounded-2xl overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+        <DialogPanel className='fixed inset-0 mx-auto z-50 w-11/12 h-1/2 rounded-2xl overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between'>
             <a href='#' className='-m-1.5 p-1.5'>
               <span className='sr-only'>Your Company</span>
@@ -88,7 +88,7 @@ const Navigation = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className='-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50'
+                    className='-mx-3 block rounded-lg px-3 py-1 font-semibold text-gray-900 hover:bg-gray-50'
                   >
                     {item.name}
                   </a>

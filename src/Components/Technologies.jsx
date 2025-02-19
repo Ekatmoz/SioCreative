@@ -40,7 +40,7 @@ const Technologies = () => {
           <RiNextjsLine className='text-7xl' />
         </motion.div>
         <motion.div
-          variants={iconVariants(2.5)}
+          variants={iconVariants(4)}
           initial='initial'
           animate='animate'
           className='rounded-2xl border-2 border-neutral-200 p-4'
@@ -48,14 +48,14 @@ const Technologies = () => {
           <RiDatabase2Line className='text-7xl text-red-400' />
         </motion.div>
         <motion.div 
-        variants={iconVariants(3)}
+        variants={iconVariants(2.5)}
         initial='initial'
         animate='animate'
         className='rounded-2xl border-2 border-neutral-200 p-4'>
           <RiNodejsLine className='text-7xl text-green-500' />
         </motion.div>
         <motion.div 
-        variants={iconVariants(2.5)}
+        variants={iconVariants(3)}
         initial='initial'
         animate='animate'
         className='rounded-2xl border-2 border-neutral-200 p-4'>
